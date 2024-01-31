@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Silly-Sight</title>
+        <link rel="icon" type="image/x-icon" href="">
+    </head>
+    <body>
+
+    </body>
+</html>
+
+<style>
+    body {
+        background-image: url("assets/bg/sbg.jpg");
+        background-color: #ffe6ef;
+        cursor:url("assets/hello_kitty.gif"), auto;
+        color: #f899d8;
+        margin-left: 20%;
+        margin-right: 20%;
+        text-align: center;
+        font-family: 'heartfontregular';
+    }
+    h2{
+        font-size: 50%;
+    }
+    h1 {
+    }
+    .header { 
+        grid-area: header;
+        background-image: url("");
+        outline-style: solid;
+        outline-width: 5px;
+        outline-color: rgb(254, 240, 255); }
+    .main {
+        grid-area: main;
+        background-image: url("assets/bg/6.png");
+        outline-style: double;
+        outline-width: 5px;
+        outline-color: rgb(254, 240, 255);
+        width: 100%;
+    }
+    .right { grid-area: right;    
+        background-image: url("assets/bg/con2.png");
+        outline-style: dotted;
+        outline-width: 5px;
+        outline-color: rgb(254, 240, 255); 
+        width: 200px;
+    }
+    .footer { grid-area: footer; }
+    
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'header header header'
+        'main main right'
+        'footer footer footer';
+      gap: 25px;
+      padding: 10px;
+    }
+    
+    .grid-container > div {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+    </style>
