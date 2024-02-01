@@ -3,23 +3,23 @@
         <title>Fizzzy's website</title>
         <link rel="icon" type="image/x-icon" href="">
     </head>
-    <body>
-
-        <table style="width:100%">
-            <tr>
-              <th colspan="3"></th>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td><h1>Say hi to everyone</h1>
-                <iframe src="https://www3.cbox.ws/box/?boxid=3534370&boxtag=eQcNuB" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
-            </td>
-            </tr>
-            <tr>
-              <td colspan="3"></td>
-            </tr>
-          </table>
+    <body>        
+      
+      <div class="header">
+        <h2>Header</h2>
+      </div>
+      
+      <div class="row">
+        <div class="column side" style=margin-right:1%;>Column</div>
+        <div class="column middle">Column</div>
+        <div class="column side" style=margin-left:1%;><iframe src="https://www3.cbox.ws/box/?boxid=3534370&boxtag=eQcNuB" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe></div>
+      </div>
+      
+      <div class="footer">
+        <p>Footer</p>
+      </div>
+      
+    
     </body>
 </html>
 
@@ -36,15 +36,14 @@
 
 
 <style>
+  * {
+  box-sizing: border-box;
+}
     body {
         background-image: url("assets/bg/sbg.jpg");
-        background-color: #d38a9c;
+        background-color: #ffdce5;
         cursor:url(""), auto;
         color: #000000;
-        margin-left: 10%;
-        margin-right: 10%;
-        text-align: center;
-        padding: 10px;
     }
     h2{
         font-size: 20px;
@@ -52,23 +51,39 @@
     h1 {
         font-size: 40px;
     }
-    table, th, td {
-  border: 1px solid black;
+.header {
+  background-color: #dcf6ff;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
 }
-th, td {
-  background-color: #96D4D4;
-  background-image: url("assets/bg/sbg.jpg");
-    background-color: #ffecf3;
-    cursor:url(""), auto;
-    color: #000000;
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: center;
-    padding: 10px;    
-  padding-top: 10px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 40px;
-  
+.column {
+  float: left;
+  padding: 10px;
+  height: 100%;
+  background-color:#000000;
 }
+.column.side {
+  width: 25%;
+  background-color:#000000;
+}
+.column.middle {
+  width: 48%;
+  background-color:#000000;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+/*@media (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}*/
     </style>
