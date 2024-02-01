@@ -4,91 +4,71 @@
         <link rel="icon" type="image/x-icon" href="">
     </head>
     <body>
-<div class="grid-container">
 
-    <div class="header">
-        <h1>Hello</h1>
-        <a>Welcome to My website</a>
-        <h1><img src="assets\barraconstruction.gif" margin-left="100px" ></h1>
-    </div>
-        
-    <div class="main">
-</div>
-
-    <div class="right">
-       <h5>Say hi to everyone</h5>
-       <iframe src="https://www3.cbox.ws/box/?boxid=3534370&boxtag=eQcNuB" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
-    </div>
-    <div class="right">
-    </div>
-
-    <div class="footer">
-        <img src="assets\under.gif">
-    </div>
-
-</div>
+        <table style="width:100%">
+            <tr>
+              <th colspan="3"></th>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td><h1>Say hi to everyone</h1>
+                <iframe src="https://www3.cbox.ws/box/?boxid=3534370&boxtag=eQcNuB" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+            </td>
+            </tr>
+            <tr>
+              <td colspan="3"></td>
+            </tr>
+          </table>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <style>
     body {
         background-image: url("assets/bg/sbg.jpg");
-        background-color: #ffe6ef;
-        cursor:url("assets/hello_kitty.gif"), auto;
-        color: #f899d8;
-        margin-left: 20%;
-        margin-right: 20%;
+        background-color: #d38a9c;
+        cursor:url(""), auto;
+        color: #000000;
+        margin-left: 10%;
+        margin-right: 10%;
         text-align: center;
-        font-family: 'heartfontregular';
+        padding: 10px;
     }
     h2{
-        font-size: 50%;
+        font-size: 20px;
     }
     h1 {
+        font-size: 40px;
     }
-    .header { 
-        grid-area: header;
-        background-image: url("");
-        outline-style: solid;
-        outline-width: 5px;
-        outline-color: rgb(254, 240, 255); }
-    .main {
-        grid-area: main;
-        background-image: url("assets/bg/6.png");
-        outline-style: double;
-        outline-width: 5px;
-        outline-color: rgb(254, 240, 255);
-        width: 100%;
-    }
-    .right { grid-area: right;    
-        background-image: url("assets/bg/con2.png");
-        outline-style: dotted;
-        outline-width: 5px;
-        outline-color: rgb(254, 240, 255); 
-        width: 200px;
-    }
-    .left { grid-area: right;    
-        background-image: url("assets/bg/con2.png");
-        outline-style: dotted;
-        outline-width: 5px;
-        outline-color: rgb(254, 240, 255); 
-        width: 200px;
-    }
-    .footer { grid-area: footer; }
-    
-    .grid-container {
-      display: grid;
-      grid-template-areas:
-        'header header header'
-        'left main right'
-        'footer footer footer';
-      gap: 25px;
-      padding: 10px;
-    }
-    
-    .grid-container > div {
-      text-align: center;
-      padding: 20px 0;
-      font-size: 30px;
-    }
+    table, th, td {
+  border: 1px solid black;
+}
+th, td {
+  background-color: #96D4D4;
+  background-image: url("assets/bg/sbg.jpg");
+    background-color: #ffecf3;
+    cursor:url(""), auto;
+    color: #000000;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    padding: 10px;    
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+  
+}
     </style>
