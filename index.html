@@ -3,7 +3,7 @@
         <title>Fizzzy's website</title>
         <link rel="icon" type="Assets\Gifs\favicon.gif" href="">
     </head>
-    <body>        
+    <body onload="displayRandImg()">        
 
   <div class="header" style="margin-bottom: 10px;">
     <h1>Hello and welcome to my website</h1>
@@ -51,6 +51,7 @@
   <img src="Assets\Buttons\youhavenoidea.png" width="88">
 </div>
 <img src="Assets\Gifs\giphy - 2020-08-11T152730.730.gif" width="200">
+<!--iframe width="314" height="321" scrolling="no" src="https://gifypet.neocities.org/pet/pet.html?name=Molly&dob=1709238564&gender=f&element=Water&pet=https%3A%2F%2Fstatic.wikia.nocookie.net%2Fcelestegame%2Fimages%2Fc%2Fc3%2FMadeline_Idle_Animation_%2528No_Backpack%2529.gif&map=hills.jpg&background=paper.jpg&tablecolor=black&textcolor=black" frameborder="0"></iframe-->
 </div>
 
 <div class="column middle">
@@ -111,46 +112,9 @@
 <h1><a href="/School.html">School</a></h1>
 <h3>[WIP]</h3>
 <img src="Assets\Gifs\Cinnamoroll.gif" width="200">
-<style>
-  .nav {
-    margin: auto;
-      Border-Style: Double;
-      Width: 210px;
-    height: 20px;
-    border-color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 0%;
-    color: black;
-  }
-  .ringbox{
-      margin: 8pt;
-      display: inline-block;
-      border: 5pt solid;
-    border-color:#ffecfc #c7c2d1 #c7c2d1 #f3ecff;
-    background-color:#dedbd9;
-    width: 250px;
-    height: 65px;
-    color: black;
-  }
-  hellow{
-    font-family: "Garamond", "Garamond", serif;
-    
-  }
-  
-  </style>
-  <html>
-  <div class="ringbox">
-  <img src="https://blahaj-fan-club.github.io/Assets/blahaj-bl%C3%A5haj.gif" height="30px">
-  <a href="https://blahaj-fan-club.github.io/"><hellow>Blahaj Fan Club Web Ring</hellow></a>
-  <img src="https://blahaj-fan-club.github.io/Assets/blahaj-bl%C3%A5haj.gif" height="30px">
-  <div class="nav">
-  <a href="https://boysmeller.nekoweb.org/">← Previous page</a> | <a href="https://connar.online/">Next page →</a>
-  </div>
-  </div>
-  </html>
+<img src="" id="yaoi" width="285px">
 </div>
 </div>
-      
 <div class="footer">
 <img src="Assets\silly\o9mrhp.jpg">
 </body>
@@ -209,6 +173,7 @@ html { background: #111;
 .buttons{
   outline-style: dotted;
   outline-color: black;
+  width: 190px;
 }
   * {
   box-sizing: border-box;
@@ -241,17 +206,17 @@ h8{
 .column {
   float: left;
   padding: 10px;
-  height: 2500px;
+  height: auto;
   text-align: center;
 }
 .column.side {
-  width: 210px;
+  width: 310px;
   background-image: url("Assets/Bg/polkadot.png");
   outline-style: solid;
   outline-color: black;
 }
 .column.middle {
-  width: calc(100% - 440px);
+  width: calc(100% - 640px);
   outline-style: double;
   outline-color: black;
 }
@@ -276,6 +241,21 @@ h8{
 
 
 <script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+    displayRandImg();
+});
+
+// Yaoi <3
+var imagesArray = ["Assets/Yaoi/IMG_1604.jpg", "Assets/Yaoi/IMG_1607.jpg", "Assets/Yaoi/IMG_1610.jpg", "Assets/Yaoi/IMG_1612.jpg", "Assets/Yaoi/IMG_1624.png"];
+
+function displayRandImg() {
+    var randomNum = Math.floor(Math.random() * imagesArray.length);
+    document.getElementById("yaoi").src = imagesArray[randomNum];
+}
+
+
+
+
   // <![CDATA[
   var colour="random"; // in addition to "random" can be set to any valid colour eg "#f0f" or "red"
   var sparkles=50;
