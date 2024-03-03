@@ -1,0 +1,18 @@
+<html>
+    <input type="file" id="fileInput" multiple>
+    <button onclick="generateFilePaths()">Generate File Paths</button>
+</html>
+
+<script>
+function generateFilePaths() {
+    const fileInput = document.getElementById('fileInput');
+    const files = fileInput.files;
+    const filePaths = [];
+
+    for (let i = 0; i < files.length; i++) {
+        filePaths.push(files[i].name);
+    }
+
+    console.log(filePaths);
+}
+</script>

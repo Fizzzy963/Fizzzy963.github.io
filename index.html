@@ -276,13 +276,36 @@ h8{
     </style>
 
 <script type="text/javascript">
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
     displayRandImg();
 });
 
 // Yaoi <3
-var imagesArray = ["Assets/Yaoi/IMG_1604.jpg", "Assets/Yaoi/IMG_1607.jpg", "Assets/Yaoi/IMG_1610.jpg", "Assets/Yaoi/IMG_1612.jpg", "Assets/Yaoi/IMG_1624.png", "Assets/Yaoi/_lkV5dQM2zppipMW5IUqxjwkUIuGXvsuJ-R5leR5RMQ_jpg.jpg", "Assets/Yaoi/1_Evangelion_3_33_poster_recensione.jpg", "Assets/Yaoi/24c20da9156aeae9c8f0c0720d87c061.png", "Assets/Yaoi/58c617886a7d1e71d2bd474311d2f806.png", "Assets/Yaoi/a085978ffed47083d70d4b5b5193adc3.jpg", "Assets/Yaoi/animesher.com_neon-genesis-evangelion-ybfs-boys-love-430394.jpg", "Assets/Yaoi/Fn0GmqJaQAA2ze7.jpeg", "Assets/Yaoi/GDQH-qyaAAEGC3H.jpeg", "Assets/Yaoi/kaworu-x-shinji-in-nerv-by-matsuki-ringo-d701j2w-8530.jpg", "Assets/Yaoi/Neon.Genesis.Evangelion.full.1770328.jpg"];
-
+var imagesArray = [
+  "Assets/Yaoi/_lkV5dQM2zppipMW5IUqxjwkUIuGXvsuJ-R5leR5RMQ_jpg.jpg",
+  "Assets/Yaoi/1_Evangelion_3_33_poster_recensione.jpg",
+  "Assets/Yaoi/24c20da9156aeae9c8f0c0720d87c061.png",
+  "Assets/Yaoi/58c617886a7d1e71d2bd474311d2f806.png",
+  "Assets/Yaoi/845345_6566917.jpeg",
+  "Assets/Yaoi/a085978ffed47083d70d4b5b5193adc3.jpg",
+  "Assets/Yaoi/animesher.com_neon-genesis-evangelion-ybfs-boys-love-430394.jpg",
+  "Assets/Yaoi/Fn0GmqJaQAA2ze7.jpeg",
+  "Assets/Yaoi/GDQH-qyaAAEGC3H.jpeg",
+  "Assets/Yaoi/images.jpeg",
+  "Assets/Yaoi/IMG_1604.jpg",
+  "Assets/Yaoi/IMG_1607.jpg",
+  "Assets/Yaoi/IMG_1610.jpg",
+  "Assets/Yaoi/IMG_1612.jpg",
+  "Assets/Yaoi/IMG_1624.png",
+  "Assets/Yaoi/IMG_1636.jpg",
+  "Assets/Yaoi/izn3l0VnrQhiHMu8MNltovJ_HPuCbo8KB26CTzOYvBE_jpg.jpg",
+  "Assets/Yaoi/kaworu-x-shinji-in-nerv-by-matsuki-ringo-d701j2w-8530.jpg",
+  "Assets/Yaoi/Neon.Genesis.Evangelion.600.1401046.jpg",
+  "Assets/Yaoi/Neon.Genesis.Evangelion.full.1770328.jpg"
+];
 function displayRandImg() {
     var randomNum = Math.floor(Math.random() * imagesArray.length);
     document.getElementById("yaoi").src = imagesArray[randomNum];
