@@ -326,29 +326,27 @@ h8{
 
 <script type="text/javascript">
 
-// Set the date we're counting down to
+
 var countDownDate = new Date("May 9, 2048 12:37:25").getTime();
 
-// Update the count down every 1 second
+
 var x = setInterval(function() {
 
-  // Get today's date and time
+
   var now = new Date().getTime();
 
-  // Find the distance between now and the count down date
+
   var distance = countDownDate - now;
 
-  // Time calculations for days, hours, minutes and seconds
+
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="demo"
   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
 
-  // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "EXPIRED";
@@ -359,7 +357,7 @@ document.addEventListener("DOMContentLoaded", function() {
     displayRandImg();
 });
 
-// Yaoi <3
+
 var imagesArray = [
   "Assets/Yaoi/_lkV5dQM2zppipMW5IUqxjwkUIuGXvsuJ-R5leR5RMQ_jpg.jpg",
   "Assets/Yaoi/1_Evangelion_3_33_poster_recensione.jpg",
@@ -389,9 +387,7 @@ function displayRandImg() {
 
 
 
-
-  // <![CDATA[
-  var colour="random"; // in addition to "random" can be set to any valid colour eg "#f0f" or "red"
+  var colour="random";
   var sparkles=50;
   
   /****************************
@@ -585,13 +581,11 @@ function displayRandImg() {
     c.sort(function(){return (0.5 - Math.random());});
     return ("rgb("+c[0]+", "+c[1]+", "+c[2]+")");
   }
-  // ]]>
 
 
-  // <![CDATA[
-var colours=new Array("#a6f", "#60f", "#60f", "#a6f", "#ccc"); // colours for top, right, bottom and left borders and background of bubbles
-var bubbles=100; // how many bubbles are moving at any given time
-var over_or_under="over"; // set to "over" for bubbles to always be on top, or "under" to allow them to float behind other objects
+var colours=new Array("#a6f", "#60f", "#60f", "#a6f", "#ccc"); 
+var bubbles=100; 
+var over_or_under="over"; 
 
 /****************************
 *   JavaScript Bubble Bath  *
@@ -742,5 +736,4 @@ function createDiv(height, width) {
   div.style.backgroundColor="transparent";
   return (div);
 }
-// ]]>
   </script>
