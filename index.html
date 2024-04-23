@@ -142,6 +142,29 @@
   <!--a href="/signalis.html"> <img src="Assets\signalis\cooltext455343605759995.gif" width="100%"> </a-->
 <img src="Assets\silly\construction.gif">
 
+<h1 id="location"></h1>
+
+<script>
+const loca = document.getElementById("location");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    loca.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  loca.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+
+document.addEventListener("DOMContentLoaded", function() {
+getLocation()
+});
+</script>
 
 
   <div class="container">
@@ -441,7 +464,7 @@ function displayRandImg() {
     document.getElementById("yaoi").src = imagesArray[randomNum];
 }
 
-/*
+
 
   var colour="random";
   var sparkles=50;
@@ -452,7 +475,7 @@ function displayRandImg() {
   *  http://www.mf2fm.com/rv  *
   * DON'T EDIT BELOW THIS BOX *
   ****************************/
- /*
+ 
   var x=ox=400;
   var y=oy=300;
   var swide=800;
