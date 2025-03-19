@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+
+<div class="laptop">
+    <img height="1080" src="Assets-new\vr2.jpg">
+    <dev class="video1">
+        <iframe width="680" height="480" src="/index-imbed.html"></iframe>
+    </dev>
+</div>
+
+</body>
+<!--div id="app" style="height: 100vh">
+    <Webamp will attempt to center itself within this div>
+</div-->
+</html>
+
+
+<style>
+body {
+    background-color: black;
+    overflow: hidden;
+}
+.ontop {
+    z-index: 0;
+}
+.laptop {
+position: relative;
+height: 500px;
+width: 490px;
+right: 00px;
+top: 00px;
+z-index: -2;
+}
+.video1{
+position: relative;
+width: 490px;
+right: -130px;
+top: -830px;
+z-index: 2;
+}
+</style>
+
+
+
+
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <script src="https://unpkg.com/webamp@1.5.0/built/webamp.bundle.min.js"></script>
+    <script src="https://unpkg.com/butterchurn@2.6.7/lib/butterchurn.min.js"></script>
+    <script src="https://unpkg.com/butterchurn-presets@2.4.7/lib/butterchurnPresets.min.js"></script>
+    <script>
+      const Webamp = window.Webamp;
+      const webamp = new Webamp({
+        initialTracks: [
+          {
+            metaData: {
+              artist: "glass beach",
+              title: "bedroom community",
+            },
+            url: "Assets/Other/bedroom community.mp3",
+          },
+          {
+            metaData: {
+              artist: "100 gecs",
+              title: "CMTEN - NEVER MET! (100 gecs r3mix feat. Glitch Gum)",
+            },
+            url: "Assets-new/Music/CMTEN - NEVER MET! (100 gecs r3mix feat. Glitch Gum).flac",
+          },
+          {
+            metaData: {
+              artist: "Cynthoni, Sewerslvt",
+              title: "Death Of The Endless",
+            },
+            url: "Assets/Other/Death Of The Endless.mp3",
+          },
+          {
+            metaData: {
+              artist: "femtanyl",
+              title: "M3 N MIN3",
+            },
+            url: "Assets-new/Music/femtanyl - M3 N MIN3.flac",
+          },
+          {
+            metaData: {
+              artist: "lexycat",
+              title: "glitter ✩‧₊˚",
+            },
+            url: "Assets-new/Music/lexycat - glitter ✩‧₊˚.flac",
+          },
+          {
+            metaData: {
+              artist: "Machine Girl",
+              title: "うずまき",
+            },
+            url: "Assets-new/Music/Machine Girl - うずまき.flac",
+          },
+          {
+            metaData: {
+              artist: "tracey brakes",
+              title: "behave, hollow automaton",
+            },
+            url: "Assets-new/Music/tracey brakes - behave, hollow automaton.flac",
+          },
+          {
+            metaData: {
+              artist: "WHOKILLEDXIX",
+              title: "spy?",
+            },
+            url: "Assets-new/Music/WHOKILLEDXIX - spy_.flac",
+          },
+        ],
+    initialSkin: {
+        url: 
+      // Find skins https://skins.webamp.org - download them and          host them on your website!
+     "Assets/Other/I_Like_This_Skin.wsz"
+    },
+        __butterchurnOptions: {
+          importButterchurn: () => Promise.resolve(window.butterchurn),
+          getPresets: () => {
+            const presets = window.butterchurnPresets.getPresets();
+            return Object.keys(presets).map((name) => {
+              return {
+                name,
+                butterchurnPresetObject: presets[name],
+              };
+            });
+          },
+          butterchurnOpen: true,
+        },
+            __initialWindowLayout: {
+                main: { position: { x: 0, y: 0 } },
+                equalizer: { position: { x: 0, y: 115 } },
+                playlist: { position: { x: 0, y: 230 }, size: [11, 1] },
+                milkdrop: { position: { x: 275, y: 0 }, size: [0, 4] }
+            }
+        });
+      webamp.renderWhenReady(document.getElementById("app"));
+    </script>
+  </body>
+</html>
